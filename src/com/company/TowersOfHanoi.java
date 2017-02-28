@@ -32,7 +32,7 @@ public class TowersOfHanoi {
     public void move(int size) {
         if (size > 0) {
             counter++;
-            System.out.print("Turn " + counter + ": Move one disk from tower " + tower[size - 1] + " to tower ");
+            System.out.print("Turn " + counter + " : Move one disk from tower " + tower[size - 1] + " to tower ");
             tower[size - 1] = (tower[size - 1] + (disks % 2 == size % 2 ? -1 : 1) + 3) % 3;
             if (tower[size - 1] == 0)
                 tower[size - 1] = 3;
